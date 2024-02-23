@@ -5,7 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="profile" href="https://gmpg.org/xfn/11" />
     <title>Cartoon Bundle</title>
-    <script src="disable-link.js"></script>
+    <script src="disable-link.js">
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+    var allLinks = document.querySelectorAll("a");
+    allLinks.forEach(function(link) {
+        link.classList.add("disabled-link");
+    });
+
+    var allowedLinks = document.querySelectorAll("a.allowed-link");
+    allowedLinks.forEach(function(link) {
+        link.classList.remove("disabled-link");
+    });
+});
+
+    </script>
     <meta
       name="description"
       content="Cartoon Story Bundle at ₹999/- ₹149 Only"
