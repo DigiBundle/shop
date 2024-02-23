@@ -7,30 +7,6 @@
     <title>Cartoon Bundle</title>
     <script src="disable-link.js">
     </script>
-    <script>
-document.addEventListener("DOMContentLoaded", function() {
-    // Get all anchor (link) elements on the page
-    var allLinks = document.querySelectorAll("a");
-
-    // Loop through each link and disable it
-    allLinks.forEach(function(link) {
-        link.addEventListener("click", function(event) {
-            event.preventDefault();
-        });
-        link.classList.add("disabled-link");
-    });
-
-    // Enable links with a specific class (e.g., "allowed-link")
-    var allowedLinks = document.querySelectorAll("a.allowed-link");
-    allowedLinks.forEach(function(link) {
-        link.removeEventListener("click", function(event) {
-            event.preventDefault();
-        });
-        link.classList.remove("disabled-link");
-    });
-});
-
-    </script>
     <meta
       name="description"
       content="Cartoon Story Bundle at ₹999/- ₹149 Only"
@@ -1022,6 +998,8 @@ document.addEventListener("DOMContentLoaded", function() {
         font-size: 1rem;
         line-height: 1em;
         padding-top: 13px;
+
+
         padding-right: 30px;
         padding-bottom: 13px;
         padding-left: 30px;
@@ -5021,6 +4999,7 @@ document.addEventListener("DOMContentLoaded", function() {
                           id="menu-item-144"
                           class="menu-item menu-item-type-post_type menu-item-object-page menu-item-144"
                         >
+
                           <a
                             href="https://designingbundle.com/contact-us/"
                             class="menu-link"
